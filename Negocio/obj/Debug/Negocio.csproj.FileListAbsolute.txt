@@ -1,0 +1,9 @@
+c:\users\digis\documents\visual studio 2013\Projects\ExamenTurboPacEntidad\Negocio\bin\Debug\Negocio.dll
+c:\users\digis\documents\visual studio 2013\Projects\ExamenTurboPacEntidad\Negocio\bin\Debug\Negocio.pdb
+c:\users\digis\documents\visual studio 2013\Projects\ExamenTurboPacEntidad\Negocio\bin\Debug\AccesoDatos.dll
+c:\users\digis\documents\visual studio 2013\Projects\ExamenTurboPacEntidad\Negocio\bin\Debug\Entidad.dll
+c:\users\digis\documents\visual studio 2013\Projects\ExamenTurboPacEntidad\Negocio\bin\Debug\AccesoDatos.pdb
+c:\users\digis\documents\visual studio 2013\Projects\ExamenTurboPacEntidad\Negocio\bin\Debug\Entidad.pdb
+c:\users\digis\documents\visual studio 2013\Projects\ExamenTurboPacEntidad\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+c:\users\digis\documents\visual studio 2013\Projects\ExamenTurboPacEntidad\Negocio\obj\Debug\Negocio.dll
+c:\users\digis\documents\visual studio 2013\Projects\ExamenTurboPacEntidad\Negocio\obj\Debug\Negocio.pdb

@@ -1,0 +1,64 @@
+﻿@model Entidad.Empleado
+@{
+    ViewBag.Title = "Registros";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Empleados</h2>
+
+<div class="container">
+    <div class="row">
+        <div style="float:left; margin-bottom:1rem;">
+            @Html.ActionLink("Agregar", "Formulario", "Empleado", htmlAttributes: new { @class = "btn btn-success" })
+        </div>
+
+        <table class="table table-bordered table-responsive">
+            <thead>
+                <tr>
+                    <td>Editar</td>
+                    <td class="hidden">IdDepartamento</td>
+                    <td>Nombre</td>
+                    <td>Apellido Paterno</td>
+                    <td>Apellido Materno</td>
+                    <td>Activo</td>
+                    <td>Salario</td>
+                   
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Entidad.Empleado empleado in Model.Empleados)
+                {
+                    <tr>
+                        <td><a  href="@Url.Action("Formulario", "Empleado", new { IdEmpleado = empleado.idEmpleado })" ><img src="~/Content/editar.JPG" style=" height:100px; width:100px;" /></a></td>
+                        <td class="hidden">@empleado.idEmpleado</td>
+                        <td>@empleado.Nombre</td>
+                        <td>@empleado.ApellidoPaterno</td>
+                        <td>@empleado.ApellidoMaterno</td>
+                        @if (empleado.Activo)
+                        {
+                            <td>
+                                <a href="@Url.Action("ActualizarStatus", "Empleado", new { idEmpleado= empleado.idEmpleado})">
+                                    <img src="~/Content/check.PNG" style=" height:60px; width:60px;" />
+                                </a>
+
+                            </td>
+                        }
+                        else
+                        {
+                            <td>
+                                <a href="@Url.Action("ActualizarStatus", "Empleado", new { idEmpleado= empleado.idEmpleado})">
+                                    <img src="~/Content/cross.PNG" style=" height:100px; width:100px;" />
+                                </a>
+
+                            </td>
+                        }
+                        <td>@empleado.Salario</td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+

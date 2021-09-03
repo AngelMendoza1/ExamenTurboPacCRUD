@@ -1,0 +1,5 @@
+c:\users\digis\documents\visual studio 2013\Projects\ExamenTurboPacEntidad\Entidad\bin\Debug\Entidad.dll
+c:\users\digis\documents\visual studio 2013\Projects\ExamenTurboPacEntidad\Entidad\bin\Debug\Entidad.pdb
+c:\users\digis\documents\visual studio 2013\Projects\ExamenTurboPacEntidad\Entidad\obj\Debug\Entidad.csprojResolveAssemblyReference.cache
+c:\users\digis\documents\visual studio 2013\Projects\ExamenTurboPacEntidad\Entidad\obj\Debug\Entidad.dll
+c:\users\digis\documents\visual studio 2013\Projects\ExamenTurboPacEntidad\Entidad\obj\Debug\Entidad.pdb

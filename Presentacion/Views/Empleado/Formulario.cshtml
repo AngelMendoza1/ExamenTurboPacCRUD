@@ -1,0 +1,71 @@
+﻿@model Entidad.Empleado
+@{
+    ViewBag.Title = "Formulario";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h5>Departamento</h5>
+        </div>
+    </div>
+
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+
+    <div class="row">
+        <div class="col-md-12">
+            @using (Html.BeginForm("Formulario", "Empleado", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            @Html.LabelFor(model => model.idEmpleado, new { @class = "hidden" })
+                            @Html.TextBoxFor(model => model.idEmpleado, new { @class = "form-control hidden" })
+                            @Html.ValidationMessageFor(model => model.idEmpleado)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            @Html.LabelFor(model => model.Nombre)
+                            @Html.TextBoxFor(model => model.Nombre, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Nombre)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            @Html.LabelFor(model => model.ApellidoPaterno)
+                            @Html.TextBoxFor(model => model.ApellidoPaterno, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.ApellidoPaterno)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            @Html.LabelFor(model => model.ApellidoMaterno)
+                            @Html.TextBoxFor(model => model.ApellidoMaterno, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.ApellidoMaterno)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            @Html.LabelFor(model => model.Salario)
+                            @Html.TextBoxFor(model => model.Salario, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Salario)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3">
+                            <input type="submit" value="Guardar" class="btn btn-success" />
+                            @Html.ActionLink("Regresar", "Registros", "Empleado", htmlAttributes: new { @class = "btn btn-danger" })
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+</div>
+
+
